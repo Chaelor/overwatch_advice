@@ -3,20 +3,32 @@ body, html{
     width: 100%;
     height: 100%;
     margin:0;
+    background-color: rgb(189, 148, 73);
 }
 
 header {
     width:100%;
+    background-color: lightblue;
 }
 
+.container {
+    margin: 0 100px;
+}
+
+p {
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
 
 /******** Nav Bar ********/
 
 .navbar {
     overflow: hidden;
-    background-color: #ccc;
+    background-color: lightblue;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    max-width:960px;
+    margin: 0 auto;
 }
 
 .links {
@@ -79,4 +91,40 @@ header {
 
 .dropdown-content a:hover {
     background-color: #0ac3c9;
+}
+
+/***** Main content *****/
+.mainContainer {
+    max-width:960px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #ccc;
+    padding: 0 10px;
+}
+
+.mainContainer h2{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size:2em;
+}
+
+.highlight {
+    margin: 20px;
+    border: 3px solid lightblue;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: lightblue;
+    box-shadow: 5px 10px 5px #888888;
+}
+
+/***** Footer *****/
+footer {
+    width: 100%;
+    background-color: rgb(173, 216, 230);
+    height: 70px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    text-align: center;
+    border-top: 2px solid black;
 }
